@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste d'attente</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="webfonts_International-Regular/International-Regular.ttf.woff">
+<link rel="stylesheet" href="stylenav.css">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/dcd65f6d8c.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<header>
+    <nav class="bordure">
+
+
+        <div class="menu">
+
+            <ul>
+                <a href="index.html"> <li class="logo"> <i class="fa-solid fa-arrow-left-long"></i>   <i class="fa-brands fa-artstation"></i> Art iShow</li> </a>
+               
+                <div class="telmail" class="telmail2">
+                    <li> <i class="fa-solid fa-phone"></i> 0692 12 34 56 </li>
+                    <li> <i class="fa-solid fa-envelope"></i> <a href="mailto:contact@artishow.com">contact@artishow.com</a> </li>
+                </div>
+
+            </ul>
+        </div>
+
+
+    </nav>
+    
+</header>
+
+<body class="S1">
+    <div id="sectionform" class="S1">
+        <div class="containerform" class="S1" >
+
+            
+                <div id='texte' class="titregradiantlisteattente"><span> </span></div>
+<script>
+// Attribut ID du texte à modifier :
+var parmoisdateid = 'texte';
+// Texte à afficher avant la date (vide si aucun) :
+var parmoisdatetext = 'Fermeture des inscriptions à minuit le :<br> ';
+// Pas besoin de modifier en dessous
+var parmoisdate = new Date().toLocaleDateString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+document.getElementById(parmoisdateid).querySelector("span").innerHTML = parmoisdatetext+parmoisdate;
+</script>
+            
+            
+            </P>
+            <form>
+                   <H2> Entrez vos coordonnés pour vous inscrire à la liste d'attente</H2>
+                <input type="email" placeholder="Entrez votre adresse email  " id="mail"> 
+                <br>
+                <input type="text" placeholder="Entrez votre nom" id="in">
+                <button class="abonner" type="button" onclick="getValue();">  Valider </button>
+
+
+
+
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+        function getValue() {
+            // Sélectionner l'élément input et récupérer sa valeur
+            var input = document.getElementById("in").value;
+            // Afficher la valeur
+            alert("Félicitation " + input + "! Vous êtes inscrit(e) à la liste d'attente des acquéreurs. " +
+                "Un mail contenant votre lien privé vous serra envoyé. Merci de vérifier vos spams.")
+        }    </script>
+
+
+
+
+    <!--
+<div class="sectioncentrale"> 
+    <div class="formulaire">
+            <h1> Formulaire d'inscription</h1>
+            <p> Entrez vos coordonnés afin de vous inscrire à la liste 
+                restreinte des acquéreurs.
+            </p>
+            <label for=""></label>
+            <input type="Prénom"> <br>
+            <p> votre adresse mail
+            </p> 
+            <input type="email" name="email" id="">
+            <input type="button" value="Valider">
+
+          
+-->
+</body>
+
+</html>
